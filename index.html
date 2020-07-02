@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="stylesheet" type="text/css" href="./src/css/style.css" />
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Module 4 Project</title>
+    <title>Homer's Awesome Donut Factory!</title>
 </head>
 <body>
-    <div class="container">
-        <div class="anchor"></div>
-    </div>
-    <script src="/src/app.js"></script>
-</body>
-</html>
+    <div>
+        <h1>Homer's Awesome Donut Factory!</h1>
+        <section class="dashboard">
+            <div class="donut_counter">Initial Donut Count</div>
+            <section class="donut_dashboard">
+                <button class="donut_add">Add a Donut</button>
+                <button class="donut_remove">Remove a Donut</button>
+                <button class="donut_autoclicker_add">Add Autoclicker</button>
+            </section>
+        </div>
+        <script src="./src/js/Donut.js"></script>
+        <script src="./src/js/app.js"></script>
+    </body>
+    </html>
