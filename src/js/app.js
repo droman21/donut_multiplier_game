@@ -8,11 +8,23 @@ const donut = new Donut();
 let isCounterActive = false;
 let intervalId = null;
 
+
+const addDonutsIfAutoClicking = function(){
+    if(car.isAutoClicking && !isCounterActive){
+        donutCounterActive();
+    }
+    else if(!car.isDriving() && isCounterActive){
+        console.log(`clearing id-${intervalId}`)
+        clearInterval(intervalId);
+        isCounterActive = false;
+    }
+}
+
 const donutCounterActive = function(){
 console.log('set interval is active')
 intervalId = setInterval(function(){
     donut.addDonut();
-    updateDonutCount();
+    updateDonutCount(donut);
     isCounterActive = true;
     }, 1000);
 }
