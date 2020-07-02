@@ -1,3 +1,13 @@
 h1 {
-    
+    color: purple;
+    font-weight: bold;
+}
+h2 {
+    color: purple;
+    font-weight: bold;
+}
+body {
+    background-image: url(/Images/donut_background.png);
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
