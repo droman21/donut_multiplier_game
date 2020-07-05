@@ -11,7 +11,7 @@ const donut = new Donut();
 let isCounterActive = false;
 let intervalId = null;
 
-function myFunction() {
+const resetDonuts = function myFunction() {
     document.getElementById("dashboard").reset();
 }
 const addDonutsIfAutoClicking = function(){
@@ -44,7 +44,6 @@ donutAddElement.addEventListener("click", function(){
     donut.addDonut();
     updateDonutCount(donut);
 })
-
 donutRemoveElement.addEventListener("click", function(){
     donut.removeDonut();
     updateDonutCount(donut);
@@ -60,14 +59,8 @@ donut_multiplier_add.addEventListener("click", function(){
     donut.addMultiplier();
     updateDonutCount(donut);
 })
-var reset = function() {
-    a = 0;
-    document.getElementById('Value').innerHTML = 0;
-}
 reset.addEventListener("click", function(){
-    reset();
+    donut.resetDonuts();
+    updateDonutCount(donut);
 })
-
-
 updateDonutCount(donut);
-
