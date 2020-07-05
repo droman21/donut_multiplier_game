@@ -7,6 +7,26 @@ h2 {
     color: purple;
     font-weight: bold;
 }
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    background: whitesmoke; opacity:0.7;
+    font-weight: bold;
+}
+nav a {
+    color: grey;
+    text-decoration: none;
+    padding: .5em 2em;
+}
+nav a:hover{
+    background: purple;
+    color: black;
+}
 body {
     background-image: url(/Images/donut_background.png);
     background-size: cover;
@@ -87,21 +107,3 @@ body {
     border: 2px solid black;
     transition-duration: 0.1s;
 }
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    background: #333; opacity:0.7;
-    font-weight: bold;
-}
-nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: .5em 2em;
-}
-nav a:hover{
-    background: purple;
