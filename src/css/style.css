@@ -107,3 +107,11 @@ body {
     border: 2px solid black;
     transition-duration: 0.1s;
 }
+.reset{
+    background-color: purple;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 24px;
+    border: 2px solid black;
+    transition-duration: 0.1s;
+}

@@ -5,13 +5,15 @@ const donutAddElement = document.querySelector('.donut_add');
 const donutRemoveElement = document.querySelector('.donut_remove');
 const donut_autoclicker_add = document.querySelector('.donut_autoclicker_add');
 const donut_multiplier_add = document.querySelector('.donut_multiplier_add');
-
+const reset = document.querySelector('.reset');
 
 const donut = new Donut();
 let isCounterActive = false;
 let intervalId = null;
 
-
+function myFunction() {
+    document.getElementById("dashboard").reset();
+}
 const addDonutsIfAutoClicking = function(){
     if(car.isAutoClicking && !isCounterActive){
         donutCounterActive();
@@ -58,5 +60,10 @@ donut_multiplier_add.addEventListener("click", function(){
     donut.addMultiplier();
     updateDonutCount(donut);
 })
+reset.addEventListener("click", function(){
+    donut.reset();
+    updateDonutCount(donut);
+})
 
 updateDonutCount(donut);
+
