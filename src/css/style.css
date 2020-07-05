@@ -115,3 +115,8 @@ body {
     border: 2px solid black;
     transition-duration: 0.1s;
 }
+.reset:hover{
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+}

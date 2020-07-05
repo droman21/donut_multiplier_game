@@ -60,10 +60,14 @@ donut_multiplier_add.addEventListener("click", function(){
     donut.addMultiplier();
     updateDonutCount(donut);
 })
+var reset = function() {
+    a = 0;
+    document.getElementById('Value').innerHTML = 0;
+}
 reset.addEventListener("click", function(){
-    donut.reset();
-    updateDonutCount(donut);
+    reset();
 })
+
 
 updateDonutCount(donut);
 
