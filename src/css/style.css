@@ -107,7 +107,7 @@ body {
     border: 2px solid black;
     transition-duration: 0.1s;
 }
-.reset{
+#reset{
     background-color: purple;
     color: white;
     border-radius: 8px;
@@ -115,7 +115,7 @@ body {
     border: 2px solid black;
     transition-duration: 0.1s;
 }
-.reset:hover{
+#reset:hover{
     background-color: yellow;
     color: black;
     cursor: pointer;
