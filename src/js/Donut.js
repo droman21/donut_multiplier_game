@@ -3,7 +3,7 @@ class Donut {
     constructor() {
         this.donutCount = 0;
         this.autoClickerCount = 0;
-        this.autoClickerCost = 1;
+        this.autoClickerCost = 50;
         this.donutMultiplierCount = 0;
         this.donutMultiplierCost = 10;
     }
