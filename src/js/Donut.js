@@ -51,9 +51,17 @@ class Donut {
         console.log(this.autoClickerCount);
         return this.autoClickerCount;
     }
+    getAutoClickerCost(){
+        console.log(this.autoClickerCost)
+        return this.autoClickerCost;
+    }
     getMultiplierCount() {
         console.log(this.donutMultiplierCount);
         return this.donutMultiplierCount;
+    }
+    getMultiplierCost(){
+        console.log(this.donutMultiplierCost)
+        return this.donutMultiplierCost;
     }
     addMultiplier() {
 
