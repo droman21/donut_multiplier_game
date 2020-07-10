@@ -13,8 +13,20 @@ const donut = new Donut();
 let isCounterActive = false;
 let intervalId = null;
 
+function setGameOver() {
+    guessField.disabled = true;
+    guessSubmit.disabled = true;
+    resetButton = document.createElement('button');
+    resetButton.textContent = 'Start new game';
+    document.body.append(resetButton);
+    resetButton.addEventListener('click', resetGame);
+  }
+
 var a = 0;
-var reset = function() {
+var resetButton = function() {
+    resetButton.addEventListener('click', function(){
+        
+    })
 	a = 0;
 	document.getElementById('Value').innerHTML = 0;
 }
@@ -70,3 +82,4 @@ resetButton.addEventListener("click", function(){
     reset();
 })
 updateDonutCount(donut);
+resetButton(donut);
